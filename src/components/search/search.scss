@@ -1,0 +1,50 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    border: 1px solid #f2f2f2;
+    // border: 1px solid red;
+    width: 60%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .select {
+      color: #000000;
+      border: none;
+      height: 100%;
+      &::selection {
+        background: #000000 !important;
+      }
+      &:focus {
+        border: #000000 !important;
+      }
+    }
+    .input {
+      outline: none;
+      border: none;
+      flex: 1;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+    .SearchBtn {
+      background-color: #231f20;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      color: #ffff;
+      height: 100%;
+      flex: 0.3;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .search {
+    .container {
+      .select {
+        display: none;
+      }
+    }
+  }
+}

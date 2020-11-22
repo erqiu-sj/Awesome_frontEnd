@@ -1,0 +1,49 @@
+.top {
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .topContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    div {
+      width: 350px;
+      h3 {
+        font-weight: 300;
+      }
+      p {
+        word-break: normal;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        color: #bbb;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        span:nth-of-type(1) {
+          color: #ccc;
+        }
+        span:nth-of-type(2) {
+          flex: 1;
+          text-align: right;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 50rem) {
+  .topContainer {
+    align-items: center;
+    flex-direction: column;
+    div {
+      margin-bottom: 1.25rem;
+    }
+  }
+}

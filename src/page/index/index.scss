@@ -1,0 +1,33 @@
+.Index {
+  margin-top: 1.875rem;
+  .container {
+    #Start {
+      margin: 4rem 0;
+      img {
+        height: 16.25rem;
+        width: 24.5rem;
+        border-radius: 0.625rem;
+      }
+      .Show {
+        // width: 68.75rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+      }
+    }
+    .reverse {
+      flex-flow: row-reverse;
+    }
+  }
+}
+@media screen and (max-width: 45rem) {
+  #Start {
+    img {
+      margin-bottom: 1rem;
+    }
+    .Show {
+      flex-direction: column !important;
+    }
+  }
+}

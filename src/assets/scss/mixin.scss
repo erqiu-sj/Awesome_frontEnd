@@ -1,0 +1,16 @@
+// 文字大小与颜色
+@mixin ColorStyle($fontSize, $Color) {
+  font-size: $fontSize;
+  color: $Color;
+}
+
+// 布局
+@mixin FlexCenterY {
+  display: flex;
+  align-items: center;
+}
+
+@mixin FlexCenterXy {
+  @include FlexCenterY();
+  justify-content: center;
+}
