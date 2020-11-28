@@ -1,9 +1,7 @@
-import { type } from "os";
-
 /*
  * @Author: 邱狮杰
  * @Date: 2020-11-22 14:59:03
- * @LastEditTime: 2020-11-22 15:49:48
+ * @LastEditTime: 2020-11-28 11:55:01
  * @FilePath: /Awesome_frontEnd-main/src/components/footer/utils.ts
  * @Description:
  */

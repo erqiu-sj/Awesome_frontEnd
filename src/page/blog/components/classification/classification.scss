@@ -1,0 +1,30 @@
+.classification {
+  .classificationItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    span:nth-of-type(1) {
+      font-size: 1.5rem;
+    }
+  }
+  ul {
+    margin: {
+      left: 5%;
+      right: 5%;
+    }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin-right: 20px;
+      &:hover {
+        color: pink;
+      }
+    }
+  }
+}

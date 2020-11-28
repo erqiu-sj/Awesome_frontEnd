@@ -1,6 +1,12 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import "./header.scss";
-const feature = ["文章", "Npm", "关于我", "留言", "专栏"];
+const feature = [
+  { name: "文章", to: "/blog" },
+  { name: "Npm", to: "" },
+  { name: "关于我", to: "" },
+  { name: "留言", to: "" },
+];
 type Props = {};
 
 const Header: FC<Props> = () => {
@@ -15,7 +21,9 @@ const Header: FC<Props> = () => {
       </div>
       <div className="navList">
         {feature.map((item, index) => (
-          <span key={index}>{item}</span>
+          <Link to={item.to} className="navItem" key={index}>
+            {item.name}
+          </Link>
         ))}
       </div>
     </div>
