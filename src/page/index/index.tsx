@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import Search from "../../components/search/search";
 import Top from "./components/top/top";
 import CodeCoffeeImg from "../../assets/img/codeCoffee.jpg";
@@ -9,6 +9,9 @@ import "./index.scss";
 type Props = {};
 
 const Index: FC<Props> = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Index">
       <Search />

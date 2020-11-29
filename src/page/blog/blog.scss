@@ -1,2 +1,18 @@
 .blog {
+  .blog_container {
+    width: 100%;
+    padding: {
+      left: 10%;
+    }
+    .cardStyle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+      .cardStyle_item {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }

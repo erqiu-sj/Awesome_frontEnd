@@ -1,0 +1,18 @@
+.bkg {
+  widows: 100vw;
+  height: 700px;
+  background-image: url("../../../../assets/img/happy.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .content {
+    background-attachment: fixed;
+    p {
+      color: white;
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,42 +1,28 @@
-import React, { FC, useEffect, useRef } from "react";
+import React, { FC, useState } from "react";
+import { Menu } from "antd";
+import { AlignLeftOutlined } from "@ant-design/icons";
+
 import "./classification.scss";
+const { SubMenu } = Menu;
+
 // 分类列表
-const classList = [
-  "JavaScript",
-  "TypeScript",
-  "Node",
-  "Webpack",
-  "Golang",
-  "TypeScript",
-  "Node",
-  "Webpack",
-  "Golang",
-  "TypeScript",
-  "Node",
-  "Webpack",
-  "Golang",
-  "TypeScript",
-  "Node",
-  "Webpack",
-  "Golang",
-];
+const classList = ["JavaScript", "TypeScript", "Node", "Webpack", "Golang"];
 type Props = {};
 const Classification: FC<Props> = () => {
-  const ulHeight = useRef(null);
-  useEffect(() => {
-    console.log(ulHeight.current);
-  }, []);
+  const [current, setCurrent] = useState("分类");
+  const handleClick = (e: any) => {
+    // 更新分类title
+    setCurrent(e.key);
+  };
   return (
     <div className="classification">
-      <div className="classificationItem">
-        <span>分类</span>
-        <span className="iconfont icon-fenlei1"></span>
-      </div>
-      <ul ref={ulHeight}>
-        {classList.map((item, index) => {
-          return <li key={index}>{item}</li>;
-        })}
-      </ul>
+      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+        <SubMenu key="SubMenu" icon={<AlignLeftOutlined />} title={current}>
+          {classList.map((item) => (
+            <Menu.Item key={item}>{item}</Menu.Item>
+          ))}
+        </SubMenu>
+      </Menu>
     </div>
   );
 };

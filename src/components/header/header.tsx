@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 const feature = [
   { name: "文章", to: "/blog" },
-  { name: "Npm", to: "" },
+  { name: "Npm", to: "/npm" },
   { name: "关于我", to: "" },
-  { name: "留言", to: "" },
+  { name: "留言", to: "/leavingMessage" },
 ];
 type Props = {};
 

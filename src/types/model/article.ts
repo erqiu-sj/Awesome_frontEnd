@@ -1,8 +1,8 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2020-10-31 16:05:14
- * @LastEditTime: 2020-10-31 16:08:48
- * @FilePath: /frontend/src/types/model/article.ts
+ * @LastEditTime: 2020-11-29 09:45:23
+ * @FilePath: /Awesome_frontEnd-main/src/types/model/article.ts
  * @Description: 文章相关接口
  */
 interface articlePublic {
@@ -13,7 +13,6 @@ interface articlePublic {
 // 获取某篇文章
 export interface GetArticle extends articlePublic {
   CreateTime: string; // 文章创建时间
-  Start: number; // Start数
   Comment: number; // 评论数
 }
 // 新增文章
