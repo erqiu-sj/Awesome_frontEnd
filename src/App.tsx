@@ -8,6 +8,7 @@ import Blog from "./page/blog/blog";
 import Npm from "./page/npm/npm";
 import LeavingMessage from "./page/leavingMsg/leavingMsg";
 import Article from "./page/article/article";
+import Me from "./page/me/index";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 type Props = {};
@@ -23,6 +24,7 @@ const App: FC<Props> = () => {
         <Route path="/npm" component={Npm} />
         <Route path="/leavingMessage" component={LeavingMessage} />
         <Route path="/article" component={Article} />
+        <Route path="/me" component={Me} />
         <Redirect to="/index" />
       </Switch>
       <Footer />
