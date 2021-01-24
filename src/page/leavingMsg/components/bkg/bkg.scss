@@ -16,3 +16,11 @@
     }
   }
 }
+@media screen and (max-width: 25.875rem) {
+  .bkg {
+    width: 100vw;
+    height: 30.75rem;
+    background-image: url("../../../../assets/img/happy.jpeg");
+    background-size: 100% 62%;
+  }
+}
