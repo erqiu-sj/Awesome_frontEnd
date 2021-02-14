@@ -9,6 +9,11 @@
   justify-content: center;
   height: 100vh;
   background: #000;
+  position: relative;
+  h1 {
+    position: absolute;
+    color: white;
+  }
   ul {
     height: 12.5rem;
   }
