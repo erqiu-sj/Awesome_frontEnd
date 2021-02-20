@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2020-11-15 04:09:42
- * @LastEditTime: 2021-02-14 12:54:05
+ * @LastEditTime: 2021-02-20 20:59:34
  * @FilePath: /Awesome_frontEnd-main/src/App.tsx
  * @Description: app
  */
@@ -17,7 +17,8 @@ import LeavingMessage from "./page/leavingMsg/leavingMsg";
 import Article from "./page/article/article";
 import Me from "./page/me/index";
 import Love from "./page/love/index";
-import ValentineDay from "./page/valentineDay/index";
+import Review from "./page/review/index";
+// import ValentineDay from "./page/valentineDay/index";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
@@ -36,7 +37,8 @@ const App: FC<Props> = () => {
         <Route path="/article" component={Article} />
         <Route path="/me" component={Me} />
         <Route path="/love" component={Love} />
-        <Route path="/" component={ValentineDay} />
+        <Route path="/review" component={Review} />
+        {/* <Route path="/" component={ValentineDay} /> */}
         <Redirect to="/index" />
       </Switch>
       <Footer />

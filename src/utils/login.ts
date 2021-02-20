@@ -1,13 +1,13 @@
-import { SignIn } from "./../types/model/user";
-import { login, specialLogin } from "../http/user";
-import { message as msg } from "antd";
 /*
  * @Author: 邱狮杰
  * @Date: 2021-01-29 22:47:18
- * @LastEditTime: 2021-02-11 20:02:59
+ * @LastEditTime: 2021-02-14 15:19:39
  * @FilePath: /Awesome_frontEnd-main/src/utils/login.ts
  * @Description: 登录相关
  */
+import { SignIn } from "./../types/model/user";
+import { login, register as registerHttp } from "../http/user";
+import { message as msg } from "antd";
 interface Usr {
   userName: string;
   password?: string;
@@ -21,7 +21,7 @@ export interface register extends Usr {}
  * @description 验证登录密码
  * @param { string } psw
  */
-export function VerifyPsw(psw: string): string {
+export function VerifyPsw(psw: string): string | never {
   // 密码必须是6-15之间
   const pswReg = /^[a-zA-Z0-9_-]{6,15}$/g;
   if (!pswReg.test(psw))
@@ -43,32 +43,37 @@ function VerifyUserName(userName: string): string | never {
 /**
  * @description 验证登录名
  * @param { login } login
- * @return { boolean } 是否登录成功
  */
 export async function VerifyLogin({
   userName,
   password,
-  ta,
 }: SignIn): Promise<any> {
   // 正常登陆
   try {
-    if (!ta) {
-      const loginResult = await login({
-        userName: VerifyUserName(userName),
-        password: password && VerifyPsw(password),
-      });
-      return loginResult;
-    }
-    // lover login
-    const specialLoginResult = await specialLogin({
+    const loginResult = await login({
       userName: VerifyUserName(userName),
+      password: password && VerifyPsw(password),
     });
-    return specialLoginResult;
+    return loginResult;
   } catch ({ message }) {
     msg.error(message);
   }
 }
-
-function VerifyRegister({ userName, password }: SignIn) {
-  
+/**
+ * @description 验证注册
+ * @param {{username,password}:SignIn}
+ * @param {string} confirmPsw 验证密码
+ */
+export async function VersetifyRegister(
+  { userName, password }: SignIn,
+  confirmPsw: string
+) {
+  try {
+    if (confirmPsw !== password) return new TypeError("请确认密码是否有误");
+    VerifyPsw(confirmPsw);
+    VerifyUserName(userName);
+    return await registerHttp({ userName, password });
+  } catch ({ message }) {
+    msg.error(message);
+  }
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2020-11-07 21:55:37
- * @LastEditTime: 2021-02-11 20:08:03
+ * @LastEditTime: 2021-02-14 15:15:50
  * @FilePath: /Awesome_frontEnd-main/src/http/user.ts
  * @Description: 用户http默认路由 登陆注册
  */
@@ -26,13 +26,9 @@ export function login(info: SignIn): Promise<any> {
   });
 }
 /**
- * @description 特殊登陆 love
- * @param {SignIn} info 只需要用户名即可 用户名即是生日
+ * @description 注册用户接口
+ * @param {SignIn}  info 注册接口
  */
-export function specialLogin(info: SignIn): Promise<any> {
-  return UserHttp({ url: "", data: info, method: "POST" });
-}
-
 export function register(info: SignIn): Promise<any> {
-  return UserHttp({ url: "", data: info, method: "POST" });
+  return UserHttp({ url: "/addUser", data: info, method: "POST" });
 }
