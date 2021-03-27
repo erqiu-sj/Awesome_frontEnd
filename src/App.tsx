@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2020-11-15 04:09:42
- * @LastEditTime: 2021-02-20 20:59:34
+ * @LastEditTime: 2021-03-26 21:10:58
  * @FilePath: /Awesome_frontEnd-main/src/App.tsx
  * @Description: app
  */
@@ -16,9 +16,7 @@ import Npm from "./page/npm/npm";
 import LeavingMessage from "./page/leavingMsg/leavingMsg";
 import Article from "./page/article/article";
 import Me from "./page/me/index";
-import Love from "./page/love/index";
-import Review from "./page/review/index";
-// import ValentineDay from "./page/valentineDay/index";
+import SignUp from "./page/SignUp/index";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
@@ -36,9 +34,7 @@ const App: FC<Props> = () => {
         <Route path="/leavingMessage" component={LeavingMessage} />
         <Route path="/article" component={Article} />
         <Route path="/me" component={Me} />
-        <Route path="/love" component={Love} />
-        <Route path="/review" component={Review} />
-        {/* <Route path="/" component={ValentineDay} /> */}
+        <Route path="/signUp" component={SignUp} />
         <Redirect to="/index" />
       </Switch>
       <Footer />

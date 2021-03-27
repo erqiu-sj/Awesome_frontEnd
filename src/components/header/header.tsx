@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2020-11-15 04:09:42
- * @LastEditTime: 2021-02-14 12:50:40
+ * @LastEditTime: 2021-03-26 21:10:49
  * @FilePath: /Awesome_frontEnd-main/src/components/header/header.tsx
  * @Description: 描述
  */
@@ -9,7 +9,7 @@ import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 const feature = [
-  { name: "love", to: "/love" },
+  { name: "Signup", to: "/signUp" },
   { name: "文章", to: "/blog" },
   { name: "Npm", to: "/npm" },
   { name: "关于我", to: "/me" },

@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ca3f5b7-c508-4cad-afac-5846711b7d22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/page/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/page/blog/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/page/blog/blog.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/love/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/love/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/review/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/review/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/model/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/model/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/page/components/login/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/page/components/login/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/login.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1mp3m6rfgTIIHpHUs8QLpDIgzQG" />
   <component name="ProjectViewState">
@@ -45,6 +62,7 @@
       <updated>1610176861179</updated>
       <workItem from="1610176863839" duration="208000" />
       <workItem from="1610177077822" duration="1754000" />
+      <workItem from="1616846782779" duration="1192000" />
     </task>
     <servers />
   </component>
@@ -61,5 +79,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
